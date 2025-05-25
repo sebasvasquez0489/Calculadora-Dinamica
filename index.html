@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora dinamica</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="calculadora">
-    <input type="text" class="pantalla">
-  
+    <!-- Se utiliza el reandoly para evitar que el usuario escriba*
+    directamente en la pantalla -->
+    <input type="text" class="pantalla" readonly> 
+
     <section class="botones">
-      <button class="num1" value="1">1</button>
-      <button class="num2" value="2">2</button>
-      <button class="num3" value="3">3</button>
-      <button class="suma" value="+">+</button>
-      
-      <button class="num4" value="4">4</button>
-      <button class="num5" value="5">5</button>
-      <button class="num6" value="6">6</button>
-      <button class="resta" value="-">-</button>
-      
-      <button class="num7" value="7">7</button>
-      <button class="num8" value="8">8</button>
-      <button class="num9" value="9">9</button>
-      <button class="multip" value="*">*</button>
-      
-      <button class="num0" value="0">0</button>
-      <button class="igual" value="=">=</button>
-      <button class="division" value="/">/</button>
+      <button class="numero" value="1">1</button>
+      <button class="numero" value="2">2</button>
+      <button class="numero" value="3">3</button>
+      <button class="operador" value="+">+</button>
+
+      <button class="numero" value="4">4</button>
+      <button class="numero" value="5">5</button>
+      <button class="numero" value="6">6</button>
+      <button class="operador" value="-">-</button>
+
+      <button class="numero" value="7">7</button>
+      <button class="numero" value="8">8</button>
+      <button class="numero" value="9">9</button>
+      <button class="operador" value="*">x</button>
+
+      <button class="numero" value="0">0</button>
+      <button class="numero" value="0">.</button>
       <button class="limpiar">C</button>
-    <section/>
+      <button class="operador" value="/">÷</button>
+      
+      <button class="igual" value="=">=</button>
+    </section>
 
   </div>
   <script src="app.js"></script>
 </body>
+
 </html>
